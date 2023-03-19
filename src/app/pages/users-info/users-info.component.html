@@ -1,0 +1,71 @@
+<div class="container mt-5">
+    
+  <div class="row d-flex justify-content-center">
+      
+      <div class="col-md-7">
+          
+          <div class="card p-3 py-4">
+              
+              <div class="text-center">
+                  <img [src]="currentUsr?.profilePic" width="200" class="rounded-circle">
+              </div>
+              
+              <div class="text-center mt-3">
+                  <span class="bg-secondary p-1 px-4 rounded text-white">{{currentUsr?.firstName}}  {{currentUsr?.lastName}}</span>
+                  <h5 class="mt-2 mb-0">Age: {{currentUsr?.age}}</h5>
+                  <span>{{currentUsr?.description}}</span>
+
+                  
+                  
+              </div>
+              
+             
+              
+              
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</div>
+
+
+
+<div class="container profile-page">
+  <div class="row">
+
+
+      <div class="col-xl-6 col-lg-7 col-md-12" *ngFor="let user of userFriends ">
+          <div class="profile-card profile-header">
+              <div class="body">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-4 col-12">
+                          <div class="profile-image float-md-right"> <img [src]="user.profilePic" alt=""> </div>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-12">
+                          <h4 class="m-t-0 m-b-0"><strong> {{user.firstName}}, {{user.lastName}}</strong> </h4>
+                          <h4>Age: {{user.age}}</h4>
+                          
+                          <p>{{user.description}}</p>
+                          <div>
+                              <button class="btn btn-primary btn-round" [routerLink]="['/users-info', user.id]">More information</button>
+                              
+                          </div>
+                          <p class="social-icon m-t-5 m-b-0">
+                              <a title="Twitter" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                              <a title="Facebook" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                              <a title="Google-plus" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                              <a title="Behance" href="javascript:void(0);"><i class="fa fa-behance"></i></a>
+                              <a title="Instagram" href="javascript:void(0);"><i class="fa fa-instagram "></i></a>
+                          </p>
+                      </div>                
+                  </div>
+              </div>                    
+          </div>
+      </div>
+
+      
+      
+</div>
+</div>

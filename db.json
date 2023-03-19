@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+    "id": 1,
+    "firstName": "Mirian",
+    "lastName": "Khajishvili",
+    "age": 22,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/happy-bearded-young-man-looks-with-joyful-expression-has-friendly-smile-wears-yellow-sweater-red-hat_295783-1388.jpg?w=1380&t=st=1679085733~exp=1679086333~hmac=9bc7cd67207c22df3ea44784f3d9942aad1605e088ca3e808e0ca36f3e0f3d90" 
+  },
+  {
+    "id": 2,
+    "firstName": "Tedo",
+    "lastName": "Tkhilaishvili",
+    "age": 22,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/portrait-young-handsome-man-jean-shirt-smiling-looking-camera_176420-12082.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph" 
+  },
+  {
+    "id": 3,
+    "firstName": "Rezo",
+    "lastName": "Martalishvili",
+    "age": 12,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/handsome-young-man-white-t-shirt-cross-arms-chest-smiling-pleased_176420-21607.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 4,
+    "firstName": "Davit",
+    "lastName": "Shevardznadze",
+    "age": 30,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology",
+    "profilePic": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 5,
+    "firstName": "Irakli",
+    "lastName": "Tchkonia",
+    "age": 27,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/close-up-handsome-professional-man-cross-arms-chest-looking-confident-camera-smiling-determined-standing-against-white-background_176420-53771.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 6,
+    "firstName": "Aleksandre",
+    "lastName": "Tsetskhladze",
+    "age": 27,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" 
+  },
+  
+  
+  {
+    "id": 7,
+    "firstName": "Nika",
+    "lastName": "Romanadze",
+    "age": 29,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/young-businessman-siting-cafeteria-with-laptop-computer-table_342744-455.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id":8,
+    "firstName": "Levan",
+    "lastName": "Sharashidze  ",
+    "age": 22,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/serious-young-man-with-arms-crossed_171337-7697.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 9,
+    "firstName": "Kartlos",
+    "lastName": "Zakariadze",
+    "age": 23,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/premium-photo/modern-smiling-man-office-worker-working-office-computer_1429-8212.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 10,
+    "firstName": "Beso",
+    "lastName": "Otiashvili",
+    "age": 22,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/premium-photo/bearded-man-hat-winter_494741-51418.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 11,
+    "firstName": "Tazo",
+    "lastName": "Salukvadze",
+    "age": 32,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/medium-shot-man-working-laptop_23-2150226061.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 12,
+    "firstName": "Guga",
+    "lastName": "Nachkebia",
+    "age": 42,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-psd/expressive-man-gesturing_23-2150199018.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 13,
+    "firstName": "Badri",
+    "lastName": "Jintcharadze",
+    "age": 35,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/handsome-stylish-male-entrepreneur-glasses-with-laptop_176420-17912.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 14,
+    "firstName": "Giga",
+    "lastName": "Okropiridze",
+    "age": 40,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/confident-middle-aged-man-portrait_23-2149051739.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  },
+  
+  {
+    "id": 15,
+    "firstName": "Archil",
+    "lastName": "Ustalishvili",
+    "age": 38,
+    "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+    "profilePic": "https://img.freepik.com/free-photo/confident-young-businessman-suit-standing-with-arms-folded_171337-18599.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
+  }
+  
+  
+  ],
+
+
+
+
+
+
+
+
+
+
+  "users-info": [
+    { 
+    "id": 16,
+    "userId":1,
+    "firstName": "Ana",
+    "lastName": "Meskhi",
+    "age": 20,
+    "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
+    "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHMsP8hTelFnU7Ljvf9Bz3zCsIxcsZNG0DQ&usqp=CAU" 
+  },
+  {
+    "id": 17,
+    "userId":2,
+    "firstName": "Lasha",
+    "lastName": "Tsintsabadze",
+    "age": 19,
+     "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
+    "profilePic": "https://img.freepik.com/free-photo/no-problem-concept-bearded-man-makes-okay-gesture-has-everything-control-all-fine-gesture-wears-spectacles-jumper-poses-against-pink-wall-says-i-got-this-guarantees-something_273609-42817.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph" 
+  },
+  {
+    "id": 18,
+    "userId":2,
+    "firstName": "Gela",
+    "lastName": "Makharadze",
+    "age": 29,
+     "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
+    "profilePic": "https://img.freepik.com/free-photo/front-view-man-looking-mischievous-while-holding-smartphone_23-2148946223.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph" 
+  },
+  {
+    "id": 19,
+    "userId":2,
+    "firstName": "Giorgi",
+    "lastName": "Khinikadze",
+    "age": 32,
+     "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
+    "profilePic": "https://img.freepik.com/free-photo/studio-portrait-bearded-man-posing-beige-background-looking-into-camera-with-broad-smile-his-face_295783-16582.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph" 
+  },
+  {
+    "id": 20,
+    "userId":2,
+    "firstName": "Giorgi",
+    "lastName": "Giorgadze",
+    "age": 21,
+     "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
+    "profilePic": "https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph" 
+  }
+  ]
+ }
+  
