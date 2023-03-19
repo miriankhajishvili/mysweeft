@@ -18,8 +18,8 @@ export class UsersService extends BaseService {
     return this.get<IUsers>(`users/${id}`)
   }
 
-  getAllFriends(): Observable<IUsers[]>{
-    return this.get<IUsers[]>('users-info')
+  getAllFriends(userId: number): Observable<IUsers[]>{
+    return this.get<IUsers[]>(`friends?_pages=1&userId=${userId}`)
   }
 
   }

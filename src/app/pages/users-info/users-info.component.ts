@@ -21,9 +21,10 @@ export class UsersInfoComponent implements OnInit {
   currentUsr?: IUsers
 
   getAllFriends(){
-    return this.userService.getAllFriends().subscribe(
+    return this.userService.getAllFriends(this.activeId).subscribe(
       res => {
-        this.userFriends = res.filter(user => user.userId == this.activeId)
+        this.userFriends = res
+        console.log(res)
       }
     
     )

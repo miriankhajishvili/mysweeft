@@ -20,7 +20,7 @@
     "id": 3,
     "firstName": "Rezo",
     "lastName": "Martalishvili",
-    "age": 12,
+    "age": 22,
     "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
     "profilePic": "https://img.freepik.com/free-photo/handsome-young-man-white-t-shirt-cross-arms-chest-smiling-pleased_176420-21607.jpg?size=626&ext=jpg&ga=GA1.2.470076025.1679085732&semt=sph" 
   },
@@ -146,7 +146,7 @@
 
 
 
-  "users-info": [
+  "friends": [
     { 
     "id": 16,
     "userId":1,
