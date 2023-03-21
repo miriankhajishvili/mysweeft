@@ -10,16 +10,17 @@ export class UsersService extends BaseService {
 
 
 
-  getAllUsers():Observable<IUsers[]>{
-    return this.get<IUsers[]>('users')
+  getAllUsers(pageCount:number):Observable<IUsers[]>{
+    return this.get<IUsers[]>(`users?_page=${pageCount}`)
   }
   
   currentUser(id: number):Observable<IUsers>{
     return this.get<IUsers>(`users/${id}`)
   }
 
-  getAllFriends(userId: number): Observable<IUsers[]>{
-    return this.get<IUsers[]>(`friends?_pages=1&userId=${userId}`)
+  getAllFriends( pageCount: number, userId: number):Observable<IUsers[]>{
+    return this.get<IUsers[]>(`friends?_page=${pageCount}&userId=${userId}`)
+
   }
 
   addNewUser(data: IUsers): Observable<IUsers>{

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IUsers } from 'src/app/core/interfaces/users';
 import { UsersService } from 'src/app/core/services/users.service';
@@ -17,17 +17,37 @@ export class UsersInfoComponent implements OnInit {
 
  
   activeId!: number
-  userFriends?: IUsers[]
+  userFriends: IUsers[] = []
   currentUsr?: IUsers
+  isLoading =false
+  page = 1
 
   getAllFriends(){
-    return this.userService.getAllFriends(this.activeId).subscribe(
+    this.isLoading = true
+   return this.userService.getAllFriends(this.page, this.activeId).subscribe(
       res => {
-        this.userFriends = res
+        this.isLoading = true
+        this.userFriends = this.userFriends.concat(res)
+        this.isLoading = false
         console.log(res)
       }
     
     )
+  }
+
+  @HostListener('window:scroll', ['$event'])
+
+  onScroll(event: any) {
+
+    const position = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+    const maxHeight = document.documentElement.scrollHeight;
+    if (position == maxHeight) {
+
+      if (!this.isLoading) {
+        this.page++;
+        this.getAllFriends();
+      }
+    }
   }
 
   currentUser(){

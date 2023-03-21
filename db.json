@@ -4,9 +4,9 @@
       "id": 1,
       "firstName": "Mirian",
       "lastName": "Khajishvili",
-      "age": 22,
-      "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://img.freepik.com/free-photo/happy-bearded-young-man-looks-with-joyful-expression-has-friendly-smile-wears-yellow-sweater-red-hat_295783-1388.jpg?w=1380&t=st=1679085733~exp=1679086333~hmac=9bc7cd67207c22df3ea44784f3d9942aad1605e088ca3e808e0ca36f3e0f3d90"
+      "age": 26,
+      "description": "Hello, I am a beginner Angular developer. I started learning programming 8 months ago. At first, I started learning the basics of programming by working on my own. Then I started studying at Alte University with USAID funding in the direction of Angular. I have experience in three projects, both team and individual work. I am motivated and ready to deepen my knowledge and experience by working on real projects.",
+      "profilePic": "https://scontent.ftbs4-2.fna.fbcdn.net/v/t39.30808-6/264850038_313446987448457_8230360660585704266_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHbHrKVPO1Ow9J4NmFQekV6fh51hSKKbXV-HnWFIoptdT72eO4D6ioZ1z3mwpPBhatHztFWuOFqYtPQzvZmqUIF&_nc_ohc=T0ykW_UJmUkAX_dirZJ&_nc_oc=AQk7jqk3qU9Ylwz0rwNZkmzWdN1AZj7YTmBJR7Qm8RpDNIHjICMKMYWqlPBQhKK0YQA&_nc_ht=scontent.ftbs4-2.fna&oh=00_AfDRQk-eGlpFAInYx_Z3XgBSCpybrRut9VwfmXeU-9uGIg&oe=641E7C15"
     },
     {
       "id": 2,
@@ -283,51 +283,6 @@
   ],
   "friends": [
     {
-      "id": 16,
-      "userId": 1,
-      "firstName": "Ana",
-      "lastName": "Meskhi",
-      "age": 20,
-      "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
-      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHMsP8hTelFnU7Ljvf9Bz3zCsIxcsZNG0DQ&usqp=CAU"
-    },
-    {
-      "id": 17,
-      "userId": 2,
-      "firstName": "Lasha",
-      "lastName": "Tsintsabadze",
-      "age": 19,
-      "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
-      "profilePic": "https://img.freepik.com/free-photo/no-problem-concept-bearded-man-makes-okay-gesture-has-everything-control-all-fine-gesture-wears-spectacles-jumper-poses-against-pink-wall-says-i-got-this-guarantees-something_273609-42817.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph"
-    },
-    {
-      "id": 18,
-      "userId": 2,
-      "firstName": "Gela",
-      "lastName": "Makharadze",
-      "age": 29,
-      "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
-      "profilePic": "https://img.freepik.com/free-photo/front-view-man-looking-mischievous-while-holding-smartphone_23-2148946223.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph"
-    },
-    {
-      "id": 19,
-      "userId": 2,
-      "firstName": "Giorgi",
-      "lastName": "Khinikadze",
-      "age": 32,
-      "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
-      "profilePic": "https://img.freepik.com/free-photo/studio-portrait-bearded-man-posing-beige-background-looking-into-camera-with-broad-smile-his-face_295783-16582.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph"
-    },
-    {
-      "id": 20,
-      "userId": 2,
-      "firstName": "Giorgi",
-      "lastName": "Giorgadze",
-      "age": 21,
-      "description": "HTML stands for HyperText Markup Language. It is a standard markup language for web page creation. It allows the creation and structure of sections, paragraphs, and links using HTML elements (the building blocks of a web page) such as tags and attributes.",
-      "profilePic": "https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?size=626&ext=jpg&ga=GA1.1.470076025.1679085732&semt=sph"
-    },
-    {
       "id": 1,
       "userId": 2,
       "firstName": "Mirian",
@@ -489,15 +444,7 @@
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
       "profilePic": "https://t4.ftcdn.net/jpg/01/15/85/23/240_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"
     },
-    {
-      "id": 19,
-      "userId": 1,
-      "firstName": "Khvicha",
-      "lastName": "Kvaratskhelia",
-      "age": 22,
-      "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
-    },
+
     {
       "id": 19,
       "userId": 1,
@@ -518,102 +465,104 @@
     },
     {
       "id": 21,
-      "userId": 3,
-      "firstName": "Gurika",
-      "lastName": "Salukvadze",
-      "age": 55,
+      "userId": 1,
+      "firstName": "Aslan",
+      "lastName": "Tsetskhladze",
+      "age": 38,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t3.ftcdn.net/jpg/02/23/61/36/240_F_223613686_2LXNahDJdD6i7TBGi8qKWxNhbaJKD116.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/01/15/85/23/240_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"
     },
     {
       "id": 22,
-      "userId": 3,
-      "firstName": "Emzar",
-      "lastName": "Devadze",
-      "age": 48,
-      "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/02/97/24/51/240_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar.jpg"
-    },
-    {
-      "id": 23,
-      "userId": 3,
-      "firstName": "Gocha",
+      "userId": 1,
+      "firstName": "Khvicha",
       "lastName": "Kvaratskhelia",
       "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/00/67/20/79/240_F_67207980_5jNk6I3KFlJjOXY73c3FlfvssaxY5N51.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
+    },
+    {
+      "id": 23,
+      "userId": 1,
+      "firstName": "Khvicha",
+      "lastName": "Kvaratskhelia",
+      "age": 22,
+      "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
+      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
     },
     {
       "id": 24,
-      "userId": 3,
-      "firstName": "Aleks",
-      "lastName": "Devadze",
+      "userId": 1,
+      "firstName": "Victor",
+      "lastName": "Osimen",
       "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/02/87/35/99/240_F_287359914_HU3P7rhmyJMyyhBBcILcWd2S7DDwkJSs.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/98/28/89/240_F_298288984_8i0PB7s9aWPzi1LeuNGGrnjXkmXRpcZn.jpg"
     },
     {
       "id": 25,
-      "userId": 3,
-      "firstName": "Giorgi",
-      "lastName": "Sikharulidze",
-      "age": 22,
+      "userId": 1,
+      "firstName": "Aslan",
+      "lastName": "Tsetskhladze",
+      "age": 38,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.https://t3.ftcdn.net/jpg/02/68/77/20/240_F_268772018_c4jJBONUHzGqUF6m1lBOy44EMSEMb0e3.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/01/15/85/23/240_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"
     },
     {
       "id": 26,
-      "userId": 3,
-      "firstName": "Nika",
-      "lastName": "Adamia",
-      "age": 32,
+      "userId": 1,
+      "firstName": "Khvicha",
+      "lastName": "Kvaratskhelia",
+      "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/02/73/70/71/240_F_273707172_FmWyRDnzKWJ5y1q8GfOLwoAjmxxtoJxu.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
     },
     {
       "id": 27,
-      "userId": 3,
-      "firstName": "Lasha",
-      "lastName": "Meskhidze",
-      "age": 35,
+      "userId": 1,
+      "firstName": "Khvicha",
+      "lastName": "Kvaratskhelia",
+      "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t3.ftcdn.net/jpg/03/16/72/68/240_F_316726850_Kp5gHry52XIA0Cedl7b2K1remR1hJ8NU.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
     },
     {
       "id": 28,
-      "userId": 3,
-      "firstName": "Lasha",
-      "lastName": "Talakhadze",
-      "age": 29,
+      "userId": 1,
+      "firstName": "Victor",
+      "lastName": "Osimen",
+      "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t3.ftcdn.net/jpg/01/26/91/78/240_F_126917876_QVFao2TKEqQejDDvxSddOVUXwU0vsnd9.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/98/28/89/240_F_298288984_8i0PB7s9aWPzi1LeuNGGrnjXkmXRpcZn.jpg"
     },
     {
       "id": 29,
-      "userId": 3,
-      "firstName": "Giorgi",
-      "lastName": "Asanidze",
-      "age": 32,
+      "userId": 1,
+      "firstName": "Aslan",
+      "lastName": "Tsetskhladze",
+      "age": 38,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t4.ftcdn.net/jpg/01/90/53/55/240_F_190535541_u3RPxroRXlqvC6FZZy6gvYnTgH8zW8CH.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/01/15/85/23/240_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"
     },
     {
       "id": 30,
-      "userId": 3,
-      "firstName": "George",
-      "lastName": "Bush",
-      "age": 62,
+      "userId": 1,
+      "firstName": "Khvicha",
+      "lastName": "Kvaratskhelia",
+      "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t3.ftcdn.net/jpg/02/09/86/24/240_F_209862474_zC5dpVeITJybZyE98hiY2uBZVr2JYEVN.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/14/74/61/240_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
     },
+
     {
       "id": 31,
-      "userId": 3,
-      "firstName": "Giorgi",
-      "lastName": "Bakradze",
-      "age": 62,
+      "userId": 1,
+      "firstName": "Victor",
+      "lastName": "Osimen",
+      "age": 22,
       "description": "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly. AngularJS's data binding and dependency injection eliminate much of the code you would otherwise have to write. And it all happens within the browser, making it an ideal partner with any server technology.",
-      "profilePic": "https://t3.ftcdn.net/jpg/01/40/84/84/240_F_140848446_UELcoAOAEN97mbMmNUS7IHCqIvUTToZn.jpg"
+      "profilePic": "https://t4.ftcdn.net/jpg/02/98/28/89/240_F_298288984_8i0PB7s9aWPzi1LeuNGGrnjXkmXRpcZn.jpg"
     }
+    
   ]
 }
