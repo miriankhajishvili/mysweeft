@@ -22,6 +22,14 @@ export class UsersService extends BaseService {
     return this.get<IUsers[]>(`friends?_pages=1&userId=${userId}`)
   }
 
+  addNewUser(data: IUsers): Observable<IUsers>{
+    return this.post<IUsers>('users',data)
+  }
+
+  deleteUser(id: number): Observable<IUsers>{
+    return this.delete<IUsers>(`users/${id}`)
+  }
+
   }
 
   

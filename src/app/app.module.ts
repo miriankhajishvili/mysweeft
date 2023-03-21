@@ -8,6 +8,9 @@ import { UsersComponent } from './pages/users/users.component';
 import { UsersInfoComponent } from './pages/users-info/users-info.component';
 import { MainLayoutModule } from './featurs/main-layout.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AddUserComponent } from './pages/add-user/add-user.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -22,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     UsersComponent,
     UsersInfoComponent,
+    AddUserComponent,
  
     
     
@@ -36,7 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     MainLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
    
 
    
