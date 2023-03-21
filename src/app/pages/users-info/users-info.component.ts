@@ -19,50 +19,49 @@ export class UsersInfoComponent implements OnInit {
   activeId!: number
   userFriends: IUsers[] = []
   currentUsr?: IUsers
-  isLoading =false
+  loading =false
   page = 1
 
-  getAllFriends(){
-    this.isLoading = true
-   return this.userService.getAllFriends(this.page, this.activeId).subscribe(
+  getFriends(){
+    this.loading = true
+   return this.userService.getFriends(this.page, this.activeId).subscribe(
       res => {
-        this.isLoading = true
+        this.loading = true
         this.userFriends = this.userFriends.concat(res)
-        this.isLoading = false
+        this.loading = false
         console.log(res)
       }
     
     )
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll',['$event'])
 
   onScroll(event: any) {
 
-    const position = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-    const maxHeight = document.documentElement.scrollHeight;
-    if (position == maxHeight) {
+    const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+    const max = document.documentElement.scrollHeight;
+    if (pos == max) {
 
-      if (!this.isLoading) {
+      if (!this.loading) {
         this.page++;
-        this.getAllFriends();
+        this.getFriends();
       }
     }
   }
 
   currentUser(){
     return this.userService.currentUser(this.activeId).subscribe(
-      res => {
-       this.currentUsr = res
+      result => {
+       this.currentUsr = result
       }
     )
   }
 
   ngOnInit(): void {
     this.activeId = this.activateRoute.snapshot.params['id']
-    console.log(this.activeId)
     this.currentUser()
-    this.getAllFriends()
+    this.getFriends()
   }
 
 }

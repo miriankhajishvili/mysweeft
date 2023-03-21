@@ -15,16 +15,16 @@ export class UsersComponent implements OnInit, OnDestroy{
   ) { }
 
   users: IUsers[] = []
-  isLoading = false
+  loading = false
   page = 1
   sub$ = new Subject()
 
-  getAllUsers(){
-    this.isLoading = true;
-   return this.userService.getAllUsers(this.page).subscribe(
+  getUsers(){
+    this.loading = true;
+   return this.userService.getUsers(this.page).subscribe(
     res => {
       this.users = this.users.concat(res)
-      this.isLoading = false;
+      this.loading = false;
     }
    )
 }
@@ -33,13 +33,13 @@ export class UsersComponent implements OnInit, OnDestroy{
 
 onScroll(event: any) {
 
-  const position = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-  const maxHeight = document.documentElement.scrollHeight;
-  if (position == maxHeight) {
+  const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+  const max = document.documentElement.scrollHeight;
+  if (pos == max) {
 
-    if (!this.isLoading) {
+    if (!this.loading) {
       this.page++;
-      this.getAllUsers();
+      this.getUsers();
     }
   }
 }
@@ -47,7 +47,7 @@ onScroll(event: any) {
 
 ngOnInit(): void {
 
-  this.getAllUsers()
+  this.getUsers()
 }
 
 ngOnDestroy(): void {
