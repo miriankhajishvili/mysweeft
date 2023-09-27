@@ -1,7 +1,9 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Subject } from 'rxjs';
 import { IUsers } from 'src/app/core/interfaces/users';
 import { UsersService } from 'src/app/core/services/users.service';
+import { DeleteConfirmationComponent } from 'src/app/shared/delete-confirmation/delete-confirmation.component';
 
 @Component({
   selector: 'app-users',
@@ -11,7 +13,8 @@ import { UsersService } from 'src/app/core/services/users.service';
 export class UsersComponent implements OnInit, OnDestroy{
 
   constructor(
-    private userService:UsersService
+    private userService:UsersService,
+    private dialog: MatDialog
   ) { }
 
   users: IUsers[] = []
@@ -19,30 +22,52 @@ export class UsersComponent implements OnInit, OnDestroy{
   page = 1
   sub$ = new Subject()
 
-  getUsers(){
+  getUsers() {
     this.loading = true;
-   return this.userService.getUsers(this.page).subscribe(
-    res => {
-      this.users = this.users.concat(res)
-      this.loading = false;
+    this.userService.getUsers(this.page).subscribe(
+      res => {
+      console.log(res)
+        this.users = this.users.concat(res);
+        this.loading = false;
+        console.log(res)
+      }
+    );
+  }
+  
+  
+
+deleteUser(id: number): void {
+  const dialogRef = this.dialog.open(DeleteConfirmationComponent);
+
+  dialogRef.afterClosed().subscribe(res => {
+    if (res === true) {
+      this.userService.deleteUser(id).subscribe(() => {
+        const index = this.users.findIndex(user => user.id === id);
+        if (index !== -1) {
+          this.users.splice(index, 1);
+        }
+      });
     }
-   )
+  });
 }
 
+
 @HostListener('window:scroll', ['$event'])
-
 onScroll(event: any) {
+  const scrollHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY;
+  const threshold = scrollHeight - windowHeight - 100; 
 
-  const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
-  const max = document.documentElement.scrollHeight;
-  if (pos == max) {
-
+  if (scrollY >= threshold) {
     if (!this.loading) {
       this.page++;
       this.getUsers();
     }
   }
 }
+
+
 
 
 ngOnInit(): void {

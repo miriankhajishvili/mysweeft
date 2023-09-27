@@ -10,3 +10,9 @@
 .back {
   background-color: rgb(13, 44, 60);
 }
+
+.add-user-container {
+  display: flex; /* Use flexbox to control alignment */
+  align-items: center; /* Vertically center the icon and text */
+  margin-left: auto; /* Push the container to the right */
+}

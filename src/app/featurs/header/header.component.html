@@ -1,11 +1,10 @@
-
-  <mat-toolbar class="back" color="primary">
-    <mat-icon class="home"routerLink="/users">home</mat-icon>
-   
-      <span class="home" routerLink="/users">Home</span>
-      <br>
-      <mat-icon  class="home" outerLink="/add-user">group_add</mat-icon> 
-      <br>
-      <span class="home" routerLink="/add-user">Add user</span>
-     
-  </mat-toolbar>
+<mat-toolbar class="back" color="primary">
+  <mat-icon class="home" routerLink="/users">home</mat-icon>
+  <span class="home" routerLink="/users">Home</span>
+  
+  <!-- Add a div to group the "Add user" elements and apply flexbox -->
+  <div class="add-user-container">
+    <mat-icon class="home" routerLink="/add-user">group_add</mat-icon>
+    <span class="home" routerLink="/add-user">Create user</span>
+  </div>
+</mat-toolbar>

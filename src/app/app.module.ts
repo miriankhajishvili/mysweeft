@@ -10,7 +10,12 @@ import { MainLayoutModule } from './featurs/main-layout.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AddUserComponent } from './pages/add-user/add-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatButtonModule} from '@angular/material/button';
+import { MatDialogModule} from '@angular/material/dialog';
+import { DeleteConfirmationComponent } from './shared/delete-confirmation/delete-confirmation.component';
+
+
 
 
 
@@ -26,6 +31,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     UsersComponent,
     UsersInfoComponent,
     AddUserComponent,
+    DeleteConfirmationComponent,
  
     
     
@@ -42,7 +48,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MainLayoutModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule
    
 
    
