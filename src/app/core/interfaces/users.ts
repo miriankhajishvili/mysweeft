@@ -6,5 +6,5 @@ export interface IUsers {
   age: number;
   description: string;
   profilePic: string;
-  friends: string[]; // Add this property to represent an array of user IDs as friends
+  friends: number[]; // Array of user IDs
 }

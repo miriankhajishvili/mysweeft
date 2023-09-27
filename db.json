@@ -2,34 +2,16 @@
   "users": [
     {
       "id": 1,
-      "firstName": "John",
-      "lastName": "Doe",
+      "firstName": "Mirian",
+      "lastName": "Khajishvili",
       "age": 30,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "profilePic": "https://img.freepik.com/free-photo/handsome-caucasian-man-wearing-casual-clothes-glasses-with-happy-cool-smile-face-lucky-person_839833-12772.jpg?w=1060&t=st=1695738378~exp=1695738978~hmac=38149aa102d0292f18a8f6434e9865f297568c78a862d65a8062b025e3de2bea",
       "friends": [
         2,
         3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        36,
-        32
+        4
+ 
       ]
     },
     {
@@ -102,16 +84,7 @@
       "friends": [
         1,
         3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
+      
         15,
         16,
         17,

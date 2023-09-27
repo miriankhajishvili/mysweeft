@@ -26,10 +26,16 @@ export class UsersComponent implements OnInit, OnDestroy{
     this.loading = true;
     this.userService.getUsers(this.page).subscribe(
       res => {
-      console.log(res)
-        this.users = this.users.concat(res);
-        this.loading = false;
-        console.log(res)
+      
+        if( res.length > 0 ){
+
+          
+          this.users = this.users.concat(res);
+          this.loading = false;
+          console.log(res)
+        }
+
+     
       }
     );
   }
