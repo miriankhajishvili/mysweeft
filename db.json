@@ -8,8 +8,13 @@
       "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "profilePic": "https://media.gettyimages.com/id/1314489757/photo/smiling-hispanic-man-against-white-background.jpg?s=2048x2048&w=gi&k=20&c=xK-PIu9PhfkSz7nUpMF6omCHgufUZcyFaRgJURtR3gA=",
       "friends": [
-        22
-      
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
       ]
     },
     {
@@ -20,8 +25,6 @@
       "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "profilePic": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=1060&t=st=1695738141~exp=1695738741~hmac=649f977051290d7aaaaf635e69c7d02948c80823ccad6ec070f4a9f826561559",
       "friends": [
-        22,
-        5,
         8,
         16,
         19,
@@ -50,8 +53,6 @@
       "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
       "profilePic": "https://img.freepik.com/free-photo/happy-bearded-young-man-looks-with-joyful-expression-has-friendly-smile-wears-yellow-sweater-red-hat_295783-1388.jpg?size=626&ext=jpg",
       "friends": [
-        7,
-        23,
         4,
         5,
         19,
@@ -1050,6 +1051,14 @@
         33,
         34
       ]
+    },
+    {
+      "firstName": "Davit",
+      "lastName": "Aghmashenebeli",
+      "age": "25",
+      "profilePic": "https://i.ytimg.com/vi/ZDra0bxBKOA/hqdefault.jpg",
+      "description": "1089 წელს აფხაზთა და ქართველთა მეფის ტახტზე ავიდა 16 წლის ჭაბუკი, მეფე დავით IV, შემდგომში აღმაშენებლად წოდებული. იგი დაიბადა 1073 წელს, მეფე გიორგი მეორის ოჯახში, ბაგრატიონთა დინასტიიდან",
+      "id": 37
     }
   ]
 }

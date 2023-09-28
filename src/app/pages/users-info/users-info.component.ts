@@ -1,7 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IUsers } from 'src/app/core/interfaces/users';
 import { UsersService } from 'src/app/core/services/users.service';
+import { DeleteConfirmationComponent } from 'src/app/shared/delete-confirmation/delete-confirmation.component';
 
 @Component({
   selector: 'app-users-info',
@@ -20,8 +22,16 @@ export class UsersInfoComponent implements OnInit {
   constructor(
     private userService: UsersService,
     private activateRoute: ActivatedRoute,
+    private dialog: MatDialog
 
   ) {}
+
+
+  ngOnInit(): void {
+    this.activeId = this.activateRoute.snapshot.params['id'];
+   
+    this.currentUser();
+  }
 
   currentUser() {
     if (this.loading) {
@@ -77,38 +87,29 @@ export class UsersInfoComponent implements OnInit {
     this.currentUser();
   }
 
-  deleteFriend(id: number) {
-    const friendIndex = this.userFriends.findIndex(friend => friend.id === id);
-  
-    if (friendIndex !== -1) {
-      // Remove the friend from userFriends array
-      this.userFriends.splice(friendIndex, 1);
-      
-      console.log(this.userFriends)
-  
-     
-      if (this.currentUsr) {
-        this.currentUsr.friends = this.currentUsr.friends.filter(friendId => friendId !== id);
-      }
-  
-      // Now, save the updated currentUsr object with the removed friend to your backend or service
-      // You might need to call a service method to update the user's friend list on the server
-      // Example: this.userService.updateUser(this.currentUsr).subscribe(result => {
-      //   // Handle the response or update the UI as needed
-      // });
-    
+  deleteFriend(friendId: number) {
+    if (this.loading) {
+      return;
     }
+  
+    
+    const dialogRef = this.dialog.open(DeleteConfirmationComponent);
+  
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result === true) {
+        this.loading = true;
+  
+        this.userService.currentUser(this.activeId).subscribe((fullUser) => {
+          const updatedFriends = fullUser.friends.filter((id) => id !== friendId);
+  
+          this.userService.updateFriendList(fullUser, updatedFriends).subscribe((updatedUser) => {
+            this.currentUsr = updatedUser;
+            this.userFriends = this.userFriends.filter((friend) => friend.id !== friendId);
+            this.loading = false;
+          });
+        });
+      }
+    });
   }
-  
-  
-  
-  
-  
-  
 
-  ngOnInit(): void {
-    this.activeId = this.activateRoute.snapshot.params['id'];
-   
-    this.currentUser();
-  }
 }

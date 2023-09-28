@@ -28,11 +28,18 @@ export class UsersService extends BaseService {
     return this.delete<IUsers>(`users/${id}`);
   }
 
-
-  updateFriendList(userId: number, updatedFriends: number[]): Observable<IUsers> {
-    const url = `users/${userId}/update-friends`; 
-    return this.put<IUsers>(url, { friends: updatedFriends });
+  getAllUsers(): Observable<IUsers[]>{
+    return this.get<IUsers[]>('users')
   }
 
+
+  
+updateFriendList(currentUsr: IUsers, updatedFriends: number[]): Observable<IUsers> {
+
+    const url =`users/${currentUsr.id}`
+
+    const updatedUser = { ...currentUsr, friends: updatedFriends }
+    return this.put<IUsers>(url, updatedUser);
+  }
   
 }

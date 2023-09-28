@@ -56,6 +56,8 @@ export class UsersComponent implements OnInit, OnDestroy {
         });
       }
     });
+
+    
   }
 
   @HostListener('window:scroll', ['$event'])
