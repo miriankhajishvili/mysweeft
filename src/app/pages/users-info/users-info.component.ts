@@ -19,7 +19,7 @@ export class UsersInfoComponent implements OnInit {
   constructor(
     private userService: UsersService,
     private activateRoute: ActivatedRoute,
-    private router: Router
+
   ) {}
 
   currentUser() {
@@ -67,8 +67,17 @@ export class UsersInfoComponent implements OnInit {
     }
   }
 
+  switchCurrentUser(friendId: number) {
+    this.activeId = friendId;
+    this.userFriends = [];
+    this.page = 1;
+    this.currentUser();
+  }
+  
+
   ngOnInit(): void {
     this.activeId = this.activateRoute.snapshot.params['id'];
+    console.log(this.activeId)
     this.currentUser();
   }
 }
