@@ -1,24 +1,23 @@
-<div class="container mt-5" >
-    <!-- Display current user information -->
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-7">
-        <div class="card p-3 py-4">
-          <div class="text-center">
-            <img [src]="currentUsr?.profilePic" width="200" class="rounded-circle">
-          </div>
-          <div class="text-center mt-3">
-            <span class="bg-secondary p-1 px-4 rounded text-white">{{currentUsr?.firstName}}  {{currentUsr?.lastName}}</span>
-            <h5 class="mt-2 mb-0">Age: {{currentUsr?.age}}</h5>
-            <span>{{currentUsr?.description}}</span>
-          </div>
+<div class="container mt-5">
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-7">
+      <div class="card p-3 py-4">
+        <div class="text-center">
+          <img [src]="currentUsr?.profilePic" width="200" class="rounded-circle">
+        </div>
+        <div class="text-center mt-3">
+          <span class="bg-secondary p-1 px-4 rounded text-white">{{currentUsr?.firstName}} {{currentUsr?.lastName}}</span>
+          <h5 class="mt-2 mb-0">Age: {{currentUsr?.age}}</h5>
+          <span>{{currentUsr?.description}}</span>
         </div>
       </div>
     </div>
   </div>
-  
-  <!-- Display the friends of the current user -->
-  <!-- Display the friends of the current user -->
-<div class="container profile-page mt-5" >
+</div>
+
+
+<div class="container profile-page mt-5">
   <div class="row">
     <div class="col-xl-6 col-lg-7 col-md-12" *ngFor="let friend of userFriends">
       <div class="profile-card profile-header">
@@ -31,15 +30,11 @@
             </div>
             <div class="col-lg-8 col-md-8 col-12">
               <h4 class="m-t-0 m-b-0">
-                
                 <strong>{{ friend.firstName }}, {{ friend.lastName }}</strong>
-                
               </h4>
-            
               <h4>Age: {{ friend.age }}</h4>
               <p>{{ friend.description }}</p>
             </div>
-           
           </div>
         </div>
       </div>

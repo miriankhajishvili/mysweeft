@@ -10,80 +10,66 @@ import { DeleteConfirmationComponent } from 'src/app/shared/delete-confirmation/
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
-export class UsersComponent implements OnInit, OnDestroy{
-
+export class UsersComponent implements OnInit, OnDestroy {
   constructor(
-    private userService:UsersService,
+    private userService: UsersService,
     private dialog: MatDialog
-  ) { }
+  ) {}
 
-  users: IUsers[] = []
-  loading = false
-  page = 1
-  sub$ = new Subject()
+  users: IUsers[] = [];
+  loading = false;
+  page = 1;
+  sub$ = new Subject();
+
+  ngOnInit(): void {
+    this.getUsers();
+  }
+
+  ngOnDestroy(): void {
+    this.sub$.next(null);
+    this.sub$.complete();
+  }
 
   getUsers() {
     this.loading = true;
     this.userService.getUsers(this.page).subscribe(
-      res => {
-      
-        if( res.length > 0 ){
-
-          
+      (res) => {
+        if (res.length > 0) {
           this.users = this.users.concat(res);
           this.loading = false;
-          console.log(res)
+          console.log(res);
         }
-
-     
       }
     );
   }
-  
-  
 
-deleteUser(id: number): void {
-  const dialogRef = this.dialog.open(DeleteConfirmationComponent);
+  deleteUser(id: number): void {
+    const dialogRef = this.dialog.open(DeleteConfirmationComponent);
 
-  dialogRef.afterClosed().subscribe(res => {
-    if (res === true) {
-      this.userService.deleteUser(id).subscribe(() => {
-        const index = this.users.findIndex(user => user.id === id);
-        if (index !== -1) {
-          this.users.splice(index, 1);
-        }
-      });
-    }
-  });
-}
+    dialogRef.afterClosed().subscribe((res) => {
+      if (res === true) {
+        this.userService.deleteUser(id).subscribe(() => {
+          const index = this.users.findIndex((user) => user.id === id);
+          if (index !== -1) {
+            this.users.splice(index, 1);
+          }
+        });
+      }
+    });
+  }
 
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+    const scrollY = window.scrollY;
+    const threshold = scrollHeight - windowHeight - 100;
 
-@HostListener('window:scroll', ['$event'])
-onScroll(event: any) {
-  const scrollHeight = document.documentElement.scrollHeight;
-  const windowHeight = window.innerHeight;
-  const scrollY = window.scrollY;
-  const threshold = scrollHeight - windowHeight - 100; 
-
-  if (scrollY >= threshold) {
-    if (!this.loading) {
-      this.page++;
-      this.getUsers();
+    if (scrollY >= threshold) {
+      if (!this.loading) {
+        this.page++;
+        this.getUsers();
+      }
     }
   }
-}
-
-
-
-
-ngOnInit(): void {
-
-  this.getUsers()
-}
-
-ngOnDestroy(): void {
-  this.sub$.next(null)
-  this.sub$.complete()
-}
-
 }
