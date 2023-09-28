@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IUsers } from 'src/app/core/interfaces/users';
 import { UsersService } from 'src/app/core/services/users.service';
 
@@ -18,7 +18,8 @@ export class UsersInfoComponent implements OnInit {
 
   constructor(
     private userService: UsersService,
-    private activateRoute: ActivatedRoute
+    private activateRoute: ActivatedRoute,
+    private router: Router
   ) {}
 
   currentUser() {
@@ -52,6 +53,7 @@ export class UsersInfoComponent implements OnInit {
       this.loading = false;
     });
   }
+
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {

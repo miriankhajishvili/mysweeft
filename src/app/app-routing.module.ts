@@ -17,16 +17,18 @@ const routes: Routes = [
       },
       {
         path: 'users',
-        component: UsersComponent,
+        loadChildren: () => import('./pages/users/users.module').then(m=> m.UsersModule)
       },
+
       {
         path: 'users-info/:id',
-        component: UsersInfoComponent,
+        loadChildren: () => import('./pages/users-info/users-info.module').then(m=> m.UsersInfoModule)
       },
       {
 
         path: 'add-user',
-        component: AddUserComponent        
+      loadChildren: () => import('./pages/add-user/add-user.module').then(m =>m.AddUserModule )
+         
         
       }
     ]
