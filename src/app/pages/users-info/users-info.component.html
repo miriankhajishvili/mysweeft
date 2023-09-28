@@ -34,6 +34,8 @@
               </h4>
               <h4>Age: {{ friend.age }}</h4>
               <p>{{ friend.description }}</p>
+              <button mat-raised-button color="warn" (click)="deleteFriend(friend.id)">Delete {{friend.firstName}}</button>
+
             </div>
           </div>
         </div>

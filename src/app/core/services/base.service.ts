@@ -10,11 +10,11 @@ export class BaseService {
   apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {
- 
+   
   }
 
-  get<T>(url: string, params?: HttpParams): Observable<T> {
-    return this.http.get<T>(this.apiUrl + url, { params });
+  get<T>(url: string): Observable<T> {
+    return this.http.get<T>(this.apiUrl + url);
   }
 
   post<T>(url: string, data: any): Observable<T> {
@@ -30,4 +30,6 @@ export class BaseService {
   delete<T>(url: string): Observable<T> {
     return this.http.delete<T>(this.apiUrl + url);
   }
+
+
 }

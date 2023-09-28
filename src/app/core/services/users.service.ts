@@ -27,13 +27,12 @@ export class UsersService extends BaseService {
   deleteUser(id: number): Observable<IUsers> {
     return this.delete<IUsers>(`users/${id}`);
   }
-  updateUser(id: number, user: IUsers): Observable<IUsers> {
-    const url = `users/${id}`;
-    return this.put<IUsers>(this.apiUrl + url, user);
+
+
+  updateFriendList(userId: number, updatedFriends: number[]): Observable<IUsers> {
+    const url = `users/${userId}/update-friends`; 
+    return this.put<IUsers>(url, { friends: updatedFriends });
   }
-  
-  
-  
 
   
 }
