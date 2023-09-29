@@ -10,11 +10,28 @@
           <span class="bg-secondary p-1 px-4 rounded text-white">{{currentUsr?.firstName}} {{currentUsr?.lastName}}</span>
           <h5 class="mt-2 mb-0">Age: {{currentUsr?.age}}</h5>
           <span>{{currentUsr?.description}}</span>
+          <hr>
+
+          <h3>Add friend</h3>
+          <mat-form-field>
+            <mat-label>Choose your friend</mat-label>
+            <mat-select #selectedUser="ngModel" [(ngModel)]="selectedUserId">
+              <mat-option *ngFor="let user of filteredUsers$ | async" [value]="user.id">
+                {{ user.firstName }} {{ user.lastName }}
+              </mat-option>
+            </mat-select>
+            
+            
+          </mat-form-field>
+          <button mat-button color="primary" (click)="submit()">Submit</button>
+          
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 
 <div class="container profile-page mt-5">
@@ -23,9 +40,11 @@
       <div class="profile-card profile-header">
         <div class="body">
           <div class="row">
+
+                        
             <div  class="col-lg-4 col-md-4 col-12">
               <div    class="profile-image float-md-right">
-                <img [src]="friend.profilePic" alt="" (click)="switchCurrentUser(friend.id)">
+                <img class="cursor" [src]="friend.profilePic" alt="" (click)="switchCurrentUser(friend.id)">
               </div>
             </div>
             <div class="col-lg-8 col-md-8 col-12">
@@ -34,7 +53,9 @@
               </h4>
               <h4>Age: {{ friend.age }}</h4>
               <p>{{ friend.description }}</p>
-              <button mat-raised-button color="warn" (click)="deleteFriend(friend.id)">Delete {{friend.firstName}}</button>
+              <button  class="btn btn-round btn-gray" (click)="switchCurrentUser(friend.id)">Show Profile</button>
+
+              <button mat-raised-button color="warn"  (click)="deleteFriend(friend.id)">Delete {{friend.firstName}}</button>
 
             </div>
           </div>
@@ -43,3 +64,6 @@
     </div>
   </div>
 </div>
+
+
+

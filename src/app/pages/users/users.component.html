@@ -15,7 +15,7 @@
                 <h4>Age: {{ user.age }}</h4>
                 <p>For more detailed information, please visit my profile</p>
                 <div>
-                  <button class="btn btn-primary btn-round" [routerLink]="['/users-info', user.id]">More information</button>
+                  <button  class="btn btn-round btn-gray" [routerLink]="['/users-info', user.id]">Show Profile</button>
                   <button mat-raised-button color="warn" (click)="deleteUser(user.id)">Delete User</button>
                 </div>
               </div>

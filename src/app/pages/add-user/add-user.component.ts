@@ -23,11 +23,16 @@ export class AddUserComponent implements OnInit {
     private router: Router
   ) { }
 
+
+
   ngOnInit(): void {
   }
 
   submit() {
-    this.userService.addNewUser(this.form.value).subscribe(res => {
+
+    const  newUser = {...this.form.value, friends: []}
+
+    this.userService.addNewUser(newUser).subscribe(res => {
       console.log(res);
     });
 

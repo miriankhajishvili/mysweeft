@@ -9,11 +9,13 @@ import { UsersInfoComponent } from './pages/users-info/users-info.component';
 import { MainLayoutModule } from './featurs/main-layout.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AddUserComponent } from './pages/add-user/add-user.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule} from '@angular/material/button';
 import { MatDialogModule} from '@angular/material/dialog';
 import { DeleteConfirmationComponent } from './shared/delete-confirmation/delete-confirmation.component';
+import { MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -50,7 +52,9 @@ import { DeleteConfirmationComponent } from './shared/delete-confirmation/delete
     ReactiveFormsModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule,
+    FormsModule
    
 
    

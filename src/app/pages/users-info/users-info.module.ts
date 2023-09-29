@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { UsersInfoRoutingModule } from './users-info-routing.module';
 
 
+
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    UsersInfoRoutingModule
+    UsersInfoRoutingModule,
+
   ]
 })
 export class UsersInfoModule { }
